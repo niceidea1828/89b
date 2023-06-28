@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/reset.css" />
+    <link rel="stylesheet" href="../styles/common_style.css" />
+    <link rel="stylesheet" href="../styles/main.css" />
+    <title>App</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="header">
+        <div class="back"></div>
+
+        <div class="balance_cont btn block">
+          <img src="../png/coin.png" alt="" />
+          <div class="balance"></div>
+        </div>
+      </div>
+
+      <img src="../png/n1.png" alt="" class="news" />
+      <img src="../png/n2.png" alt="" class="news" />
+      <img src="../png/n3.png" alt="" class="news last" />
+
+      <div class="footer">
+        <a href="main.html" class="footer_link">
+          <img src="../png/m1.png" alt="" class="na" />
+        </a>
+
+        <a href="news.html" class="footer_link">
+          <img src="../png/m2.png" alt="" />
+        </a>
+      </div>
+    </div>
+
+    <style>
+      .wrapper {
+        overflow: auto;
+      }
+
+      .news {
+        display: block;
+        margin: 20px auto;
+        width: 300px;
+      }
+
+      .last {
+        margin-bottom: 140px;
+      }
+    </style>
+
+    <script>
+      document.querySelector(".balance").innerHTML = localStorage.balance_b86;
+
+      window.onload = () => {
+        document.querySelector(".wrapper").classList.remove("hidden");
+      };
+    </script>
+  </body>
+</html>

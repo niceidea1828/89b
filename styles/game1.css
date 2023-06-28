@@ -1,0 +1,69 @@
+.spin {
+  margin: 20px auto auto;
+}
+
+.slot_cont_cont {
+  width: 360.01px;
+  height: 480px;
+
+  background: url(../png/slot_bg.png) center/370px 800px;
+  margin: 20px auto;
+}
+
+.slot_cont {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: space-around;
+
+  overflow: hidden;
+}
+
+.slot_col {
+  position: relative;
+
+  width: 33%;
+  height: 25%;
+}
+
+.inner_slot_col {
+  position: absolute;
+  top: 0;
+
+  width: 100%;
+  height: 100%;
+
+  transition: top 4s ease;
+}
+
+.slot {
+  width: 100%;
+  height: 100%;
+}
+
+.slot img {
+  max-width: 90%;
+  max-height: 90%;
+}
+
+.balance_cont {
+  width: 117.329px;
+  height: 30.908px;
+
+  border-radius: 14px;
+  border: 2px solid #fff;
+  background: #595959;
+}
+
+@media screen and (max-height: 750px) {
+  .slot_cont_cont {
+    height: 420px;
+  }
+}
+
+@media screen and (max-height: 710px) {
+  .slot_cont_cont {
+    height: 360px;
+  }
+}

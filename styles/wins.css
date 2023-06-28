@@ -1,0 +1,35 @@
+.congr {
+  width: 297px;
+  height: 81.794px;
+
+  margin: 20px auto 80px;
+}
+
+.wins {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+
+  margin: 20px auto auto;
+}
+
+.win {
+  position: relative;
+}
+
+.win img {
+  width: 310px;
+}
+
+.win_text {
+  position: absolute;
+  bottom: 20px;
+
+  width: 100%;
+  text-align: center;
+
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 24px;
+}
